@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ═══ SEO FIX #6 — Full SEO Meta Tags ═══ -->
+<title>CyberWatch NG — Cybersecurity News &amp; Scam Alerts for Nigerians</title>
+<meta name="description" content="CyberWatch NG is Nigeria's leading cybersecurity awareness platform. Get weekly scam alerts, threat reports, and digital safety tips in plain language. Protect your money and identity online.">
+<meta name="keywords" content="cybersecurity Nigeria, cyber scams Nigeria, online fraud Nigeria, SIM swap Nigeria, WhatsApp scam Nigeria, digital safety Nigeria, cybercrime Nigeria, internet security Nigeria, CyberWatch NG, Chukwuemeka Oko">
+<meta name="author" content="Chukwuemeka Oko, CyberWatch NG">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://cyberwatchng.netlify.app/">
+<meta name="google-site-verification" content="KkjWZHmOPQlZvIVRri0F79ApSL-aHLHa6bDMOKCt7o8">
+
+<!-- Open Graph — controls how link looks on WhatsApp, LinkedIn, Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cyberwatchng.netlify.app/">
+<meta property="og:title" content="CyberWatch NG — Cybersecurity News &amp; Scam Alerts for Nigerians">
+<meta property="og:description" content="Nigeria loses $500M+ to cybercrime every year. CyberWatch NG delivers weekly threat alerts, scam warnings, and digital safety tips in plain language for every Nigerian.">
+<meta property="og:image" content="https://cyberwatchng.netlify.app/preview.png">
+<meta property="og:site_name" content="CyberWatch NG">
+<meta property="og:locale" content="en_NG">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CyberWatch NG — Cybersecurity News &amp; Scam Alerts for Nigerians">
+<meta name="twitter:description" content="Weekly cyber threat alerts and digital safety tips for Nigerians. Stay informed. Stay protected.">
+
+<!-- Schema.org — helps Google understand who you are -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "CyberWatch NG",
+  "url": "https://cyberwatchng.netlify.app",
+  "description": "Nigeria's cybersecurity awareness platform delivering weekly threat alerts and digital safety tips",
+  "author": {
+    "@type": "Person",
+    "name": "Chukwuemeka Oko",
+    "jobTitle": "Cybersecurity Trainee & Digital Safety Advocate",
+    "worksFor": {"@type": "Organization", "name": "Bincom Dev Center"},
+    "address": {"@type": "PostalAddress", "addressLocality": "Port Harcourt", "addressCountry": "NG"}
+  }
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --white:      #ffffff;
+  --off-white:  #f8f9fa;
+  --light-grey: #f1f3f5;
+  --border:     #dee2e6;
+  --soft-border:#e9ecef;
+  --text-body:  #2d3748;
+  --text-muted: #6c757d;
+  --navy:       #0d1b3e;
+  --navy-mid:   #1a2f5e;
+  --accent:     #1a5eb5;
+  --accent-dk:  #124d99;
+  --red:        #b91c1c;
+  --red-soft:   #fef2f2;
+  --amber:      #92400e;
+  --amber-soft: #fffbeb;
+  --green:      #166534;
+  --green-soft: #f0fdf4;
+  --shadow-sm:  0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md:  0 4px 16px rgba(0,0,0,0.09);
+  --shadow-lg:  0 10px 32px rgba(0,0,0,0.11);
+  --r:          8px;
+  --rl:         14px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--white);font-family:"Source Sans 3",sans-serif;color:var(--text-body);line-height:1.7;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+
+/* ALERT BAR */
+.alert-bar{background:var(--navy);padding:8px 5%;display:flex;align-items:center;gap:12px;overflow:hidden}
+.alert-label{background:var(--red);color:#fff;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:3px 10px;border-radius:3px;white-space:nowrap;flex-shrink:0}
+.ticker-wrap{flex:1;overflow:hidden;white-space:nowrap}
+.ticker-inner{display:inline-block;animation:ticker 42s linear infinite;font-size:12px;color:rgba(255,255,255,0.75)}
+.ticker-inner span{padding:0 28px}
+.ticker-inner span::before{content:"· ";color:rgba(255,255,255,0.3)}
+@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* NAVBAR */
+.navbar{position:sticky;top:0;z-index:1000;background:var(--white);border-bottom:3px solid var(--navy);box-shadow:var(--shadow-sm)}
+.nav-inner{max-width:1160px;margin:0 auto;padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:66px}
+.nav-logo{display:flex;align-items:center;gap:12px}
+.nav-logo svg{width:30px;height:34px;flex-shrink:0}
+.nav-logo-name{font-family:"Playfair Display",serif;font-size:19px;font-weight:800;color:var(--navy);line-height:1.1}
+.nav-logo-name span{color:var(--accent)}
+.nav-logo-sub{font-size:10px;color:var(--text-muted);letter-spacing:1.5px;text-transform:uppercase}
+.nav-links{display:flex;align-items:center;gap:2px}
+.nav-links a{font-size:13.5px;font-weight:500;color:var(--text-body);padding:8px 13px;border-radius:var(--r);transition:all .18s}
+.nav-links a:hover{color:var(--accent);background:var(--off-white)}
+.nav-links .nav-cta{background:var(--navy);color:#fff!important;padding:9px 18px!important;margin-left:6px;border-radius:var(--r)!important;font-weight:600!important}
+.nav-links .nav-cta:hover{background:var(--navy-mid)!important}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px}
+.hamburger span{width:22px;height:2px;background:var(--navy);border-radius:2px}
+.mob-nav{display:none;background:var(--white);border-bottom:1px solid var(--border);padding:8px 5%}
+.mob-nav.open{display:block}
+.mob-nav a{display:block;font-size:14px;font-weight:500;color:var(--text-body);padding:12px 0;border-bottom:1px solid var(--soft-border)}
+
+/* HERO */
+.hero{background:var(--navy);padding:72px 5% 68px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 55% 70% at 100% 60%,rgba(26,94,181,.18) 0%,transparent 60%)}
+.hero-inner{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:1.15fr 0.85fr;gap:60px;align-items:center;position:relative;z-index:1}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(26,94,181,.18);border:1px solid rgba(100,160,255,.2);border-radius:20px;padding:5px 14px;font-size:11px;font-weight:600;color:#93b8e8;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:20px}
+.hero-eyebrow::before{content:"●";font-size:7px}
+.hero h1{font-family:"Playfair Display",serif;font-size:clamp(30px,4.2vw,52px);font-weight:800;color:#fff;line-height:1.15;margin-bottom:18px}
+.hero h1 em{color:#93b8e8;font-style:normal}
+.hero-desc{font-size:17px;color:rgba(255,255,255,.68);font-weight:300;line-height:1.82;margin-bottom:34px;max-width:500px}
+.hero-desc strong{color:rgba(255,255,255,.92);font-weight:500}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn-navy{background:var(--accent);color:#fff;font-size:14px;font-weight:600;padding:12px 26px;border-radius:var(--r);border:2px solid var(--accent);transition:all .2s;display:inline-block}
+.btn-navy:hover{background:var(--accent-dk);border-color:var(--accent-dk)}
+.btn-ghost{background:transparent;color:rgba(255,255,255,.82);font-size:14px;font-weight:500;padding:12px 26px;border-radius:var(--r);border:2px solid rgba(255,255,255,.22);transition:all .2s;display:inline-block}
+.btn-ghost:hover{border-color:rgba(255,255,255,.55);color:#fff}
+
+/* STATS PANEL */
+.stats-panel{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.1);border-radius:var(--rl);padding:28px 24px}
+.stats-title{font-size:10px;font-weight:700;letter-spacing:2px;color:rgba(255,255,255,.3);text-transform:uppercase;margin-bottom:20px;padding-bottom:14px;border-bottom:1px solid rgba(255,255,255,.08)}
+.stat-row{display:flex;align-items:flex-start;gap:14px;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.055)}
+.stat-row:last-child{border-bottom:none;padding-bottom:0}
+.stat-ico{width:38px;height:38px;border-radius:var(--r);display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0}
+.ico-r{background:rgba(185,28,28,.22)} .ico-b{background:rgba(26,94,181,.22)} .ico-g{background:rgba(180,100,0,.22)}
+.stat-num{font-family:"Playfair Display",serif;font-size:20px;font-weight:700;color:#fff;line-height:1;margin-bottom:2px}
+.stat-lbl{font-size:12px;color:rgba(255,255,255,.45);font-weight:300;margin-bottom:3px}
+.stat-src{font-size:10px;color:rgba(255,255,255,.22);font-style:italic}
+.stat-src a{color:rgba(147,184,232,.6);text-decoration:underline}
+.stat-src a:hover{color:#93b8e8}
+
+/* SECTIONS */
+.sec{padding:80px 5%}
+.sec .in{max-width:1160px;margin:0 auto}
+.sec-bg{background:var(--off-white);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.eyebrow{display:flex;align-items:center;gap:10px;font-size:11px;font-weight:700;letter-spacing:2px;color:var(--accent);text-transform:uppercase;margin-bottom:10px}
+.eyebrow::before{content:"";width:18px;height:2px;background:var(--accent);border-radius:2px;flex-shrink:0}
+.sec-h{font-family:"Playfair Display",serif;font-size:clamp(24px,3.2vw,36px);font-weight:800;color:var(--navy);line-height:1.2;margin-bottom:12px}
+.sec-h span{color:var(--accent)}
+.sec-p{font-size:16px;color:var(--text-muted);line-height:1.75;max-width:560px;margin-bottom:44px}
+.divider{height:1px;background:var(--border)}
+
+/* WHY CARDS */
+.why-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(248px,1fr));gap:18px}
+.why-card{background:var(--white);border:1px solid var(--border);border-top:3px solid transparent;border-radius:var(--r);padding:26px 22px;box-shadow:var(--shadow-sm);transition:all .22s}
+.why-card:hover{border-top-color:var(--accent);box-shadow:var(--shadow-md);transform:translateY(-3px)}
+.why-ico{width:42px;height:42px;background:var(--light-grey);border:1px solid var(--border);border-radius:var(--r);display:flex;align-items:center;justify-content:center;font-size:19px;margin-bottom:14px}
+.why-card h3{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:8px}
+.why-card p{font-size:13.5px;color:var(--text-muted);line-height:1.7}
+
+/* THREAT CARDS */
+.threat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(258px,1fr));gap:18px}
+.threat-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:22px;box-shadow:var(--shadow-sm);transition:box-shadow .2s}
+.threat-card:hover{box-shadow:var(--shadow-md)}
+.t-badge{display:inline-flex;align-items:center;gap:5px;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:3px 9px;border-radius:4px;margin-bottom:12px}
+.t-high{background:var(--red-soft);color:var(--red);border:1px solid rgba(185,28,28,.18)}
+.t-med{background:var(--amber-soft);color:var(--amber);border:1px solid rgba(146,64,14,.18)}
+.threat-card h4{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:7px}
+.threat-card p{font-size:13.5px;color:var(--text-muted);line-height:1.7;margin-bottom:14px}
+.threat-tip{background:var(--green-soft);border-left:3px solid var(--green);padding:9px 12px;border-radius:0 var(--r) var(--r) 0;font-size:13px;color:var(--green);font-weight:500}
+
+/* ═══ FIX #1 — ARTICLE SECTION ═══ */
+.article-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px}
+.article-card{background:var(--white);border:1px solid var(--border);border-radius:var(--rl);overflow:hidden;box-shadow:var(--shadow-sm);transition:all .22s;display:flex;flex-direction:column}
+.article-card:hover{box-shadow:var(--shadow-md);transform:translateY(-3px)}
+.article-banner{height:6px}
+.article-body{padding:24px;flex:1;display:flex;flex-direction:column}
+.article-cat{display:inline-block;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:3px 9px;border-radius:3px;margin-bottom:12px;background:rgba(26,94,181,.08);color:var(--accent);border:1px solid rgba(26,94,181,.15)}
+.article-card h3{font-family:"Playfair Display",serif;font-size:18px;font-weight:700;color:var(--navy);line-height:1.35;margin-bottom:10px}
+.article-card p{font-size:14px;color:var(--text-muted);line-height:1.7;flex:1;margin-bottom:18px}
+.article-meta{font-size:11px;color:var(--text-muted);display:flex;gap:14px;margin-bottom:16px;padding-top:14px;border-top:1px solid var(--soft-border)}
+.article-read-btn{display:inline-flex;align-items:center;gap:6px;background:var(--navy);color:#fff;font-size:13px;font-weight:600;padding:10px 18px;border-radius:var(--r);transition:background .18s;align-self:flex-start}
+.article-read-btn:hover{background:var(--navy-mid)}
+.article-read-btn.outline{background:transparent;color:var(--accent);border:1.5px solid var(--accent)}
+.article-read-btn.outline:hover{background:var(--accent);color:#fff}
+
+/* FULL ARTICLE */
+.full-article{display:none;background:var(--white);border:1px solid var(--border);border-radius:var(--rl);padding:40px;margin-top:28px;box-shadow:var(--shadow-sm);max-width:760px}
+.full-article.open{display:block}
+.article-close{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);cursor:pointer;margin-bottom:24px;font-weight:500;width:fit-content}
+.article-close:hover{color:var(--accent)}
+.article-hero-meta{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--border)}
+.article-hero-meta span{font-size:12px;color:var(--text-muted);display:flex;align-items:center;gap:5px}
+.article-title{font-family:"Playfair Display",serif;font-size:clamp(22px,3vw,32px);font-weight:800;color:var(--navy);line-height:1.25;margin-bottom:6px}
+.article-subtitle{font-size:16px;color:var(--text-muted);margin-bottom:28px;line-height:1.6}
+.article-content h2{font-family:"Playfair Display",serif;font-size:20px;font-weight:700;color:var(--navy);margin:28px 0 10px}
+.article-content h3{font-size:16px;font-weight:700;color:var(--navy);margin:22px 0 8px}
+.article-content p{font-family:"Source Serif 4",serif;font-size:16px;color:var(--text-body);line-height:1.85;margin-bottom:16px}
+.article-content ul{padding-left:20px;margin-bottom:16px}
+.article-content li{font-family:"Source Serif 4",serif;font-size:15px;color:var(--text-body);line-height:1.75;margin-bottom:6px}
+.article-content strong{color:var(--navy);font-weight:600}
+.scam-block{background:var(--off-white);border:1px solid var(--border);border-left:4px solid var(--red);border-radius:0 var(--r) var(--r) 0;padding:20px 22px;margin:20px 0}
+.scam-block .scam-num{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--red);margin-bottom:6px}
+.scam-block h3{font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px}
+.scam-block p{font-size:14px;color:var(--text-body);line-height:1.7;margin-bottom:10px}
+.scam-protect{background:var(--green-soft);border-left:3px solid var(--green);padding:10px 14px;border-radius:0 var(--r) var(--r) 0;font-size:13.5px;color:var(--green);font-weight:500}
+.article-cta{background:var(--navy);color:#fff;border-radius:var(--r);padding:24px 28px;margin-top:32px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px}
+.article-cta p{font-size:14px;color:rgba(255,255,255,.75);margin:0;font-weight:300}
+.article-cta strong{color:#fff;display:block;font-size:16px;margin-bottom:4px}
+.article-cta a{background:#fff;color:var(--navy);font-size:13px;font-weight:700;padding:10px 20px;border-radius:var(--r);white-space:nowrap}
+
+/* ═══ FIX #2 — EMAIL SIGNUP ═══ */
+.signup-sec{background:var(--navy);padding:72px 5%;text-align:center;position:relative;overflow:hidden}
+.signup-sec::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(26,94,181,.25) 0%,transparent 60%);pointer-events:none}
+.signup-inner{max-width:520px;margin:0 auto;position:relative;z-index:1}
+.signup-sec h2{font-family:"Playfair Display",serif;font-size:clamp(22px,3vw,34px);font-weight:800;color:#fff;margin-bottom:10px;line-height:1.2}
+.signup-sec h2 span{color:#93b8e8}
+.signup-sec p{font-size:15px;color:rgba(255,255,255,.62);line-height:1.75;margin-bottom:28px}
+.signup-form{display:flex;gap:0;max-width:460px;margin:0 auto 12px;border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow-lg)}
+.signup-input{flex:1;padding:14px 18px;border:none;font-size:14px;font-family:"Source Sans 3",sans-serif;color:var(--text-body);background:#fff;outline:none}
+.signup-input::placeholder{color:#adb5bd}
+.signup-btn{background:var(--accent);color:#fff;font-size:14px;font-weight:700;padding:14px 22px;border:none;cursor:pointer;font-family:"Source Sans 3",sans-serif;white-space:nowrap;transition:background .2s}
+.signup-btn:hover{background:var(--accent-dk)}
+.signup-note{font-size:11.5px;color:rgba(255,255,255,.35)}
+.signup-perks{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+.signup-perk{font-size:12.5px;color:rgba(255,255,255,.5);display:flex;align-items:center;gap:5px}
+.signup-success{display:none;background:rgba(22,101,52,.2);border:1px solid rgba(22,101,52,.3);border-radius:var(--r);padding:14px 20px;font-size:14px;color:#6ee7b7;font-weight:500;margin:12px auto 0;max-width:460px}
+.signup-success.show{display:block}
+.signup-error{border-color:var(--red)!important;box-shadow:0 0 0 3px rgba(185,28,28,.15)!important}
+
+/* ABOUT */
+.about-wrap{display:grid;grid-template-columns:320px 1fr;gap:60px;align-items:start}
+.about-photo-box{position:relative}
+.about-photo{border-radius:var(--rl);overflow:hidden;aspect-ratio:4/5;background:var(--light-grey);border:1px solid var(--border);box-shadow:var(--shadow-lg)}
+.about-photo img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.about-badge{position:absolute;bottom:-14px;right:-14px;background:var(--navy);color:#fff;border:3px solid var(--white);border-radius:var(--r);padding:12px 16px;text-align:center;box-shadow:var(--shadow-md)}
+.about-badge-num{font-family:"Playfair Display",serif;font-size:20px;font-weight:800;color:#93b8e8;line-height:1}
+.about-badge-txt{font-size:10px;color:rgba(255,255,255,.5);letter-spacing:1px;text-transform:uppercase;margin-top:1px}
+.about-content h2{font-family:"Playfair Display",serif;font-size:clamp(22px,3vw,34px);font-weight:800;color:var(--navy);line-height:1.2;margin-bottom:4px}
+.about-content h2 span{color:var(--accent)}
+.about-role{font-size:12px;font-weight:700;letter-spacing:1.5px;color:var(--accent);text-transform:uppercase;margin-bottom:22px}
+.about-content p{font-family:"Source Serif 4",serif;font-size:16px;color:var(--text-body);line-height:1.85;margin-bottom:14px}
+.about-content p strong{color:var(--navy);font-weight:600}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.tag{background:var(--off-white);border:1px solid var(--border);border-radius:20px;padding:5px 14px;font-size:12.5px;color:var(--text-body);font-weight:500}
+
+/* PILLARS */
+.pillars{display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow-sm)}
+.pillar{padding:26px 16px;text-align:center;border-right:1px solid var(--border);background:var(--white);transition:background .18s}
+.pillar:last-child{border-right:none}
+.pillar:hover{background:var(--off-white)}
+.pillar-ico{font-size:24px;margin-bottom:9px}
+.pillar h4{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:5px}
+.pillar p{font-size:12px;color:var(--text-muted);line-height:1.5}
+
+/* CTA / SOCIAL — FIX #5: renamed "Stay Safe" → "Follow Us", added WhatsApp FIX #7 */
+.cta-wrap{background:var(--off-white);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:72px 5%;text-align:center}
+.cta-inner{max-width:580px;margin:0 auto}
+.cta-wrap h2{font-family:"Playfair Display",serif;font-size:clamp(22px,3vw,34px);font-weight:800;color:var(--navy);line-height:1.2;margin-bottom:10px}
+.cta-wrap h2 span{color:var(--accent)}
+.cta-wrap p{font-size:15px;color:var(--text-muted);line-height:1.75;margin-bottom:28px}
+.social-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px;max-width:560px;margin:0 auto}
+.soc-btn{display:flex;align-items:center;gap:10px;background:var(--white);border:1.5px solid var(--border);border-radius:var(--r);padding:13px 18px;font-size:14px;font-weight:500;color:var(--text-body);transition:all .18s}
+.soc-btn:hover{border-color:var(--accent);color:var(--accent);box-shadow:var(--shadow-sm)}
+.soc-btn .soc-ico{font-size:18px;width:26px;text-align:center}
+
+/* FOOTER */
+footer{background:#080f22;border-top:3px solid var(--accent);padding:52px 5% 28px}
+.foot-in{max-width:1160px;margin:0 auto}
+.foot-grid{display:grid;grid-template-columns:1.8fr 1fr 1fr;gap:44px;margin-bottom:36px}
+.foot-brand-name{font-family:"Playfair Display",serif;font-size:20px;font-weight:800;color:#fff;margin-bottom:10px}
+.foot-brand-name span{color:#93b8e8}
+.foot-brand p{font-size:13px;color:rgba(255,255,255,.45);line-height:1.75;max-width:270px;font-weight:300}
+.foot-col h4{font-size:10px;font-weight:700;letter-spacing:2px;color:rgba(255,255,255,.28);text-transform:uppercase;margin-bottom:14px}
+.foot-col a{display:block;font-size:13.5px;color:rgba(255,255,255,.5);margin-bottom:9px;transition:color .18s}
+.foot-col a:hover{color:rgba(255,255,255,.9)}
+.foot-bottom{padding-top:20px;border-top:1px solid rgba(255,255,255,.07);display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
+.foot-bottom p{font-size:12px;color:rgba(255,255,255,.28)}
+.foot-bottom p strong{color:rgba(255,255,255,.55)}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero-inner{grid-template-columns:1fr;gap:40px}
+  .stats-panel{display:none}
+  .about-wrap{grid-template-columns:1fr}
+  .about-photo-box{max-width:300px}
+  .pillars{grid-template-columns:repeat(3,1fr)}
+  .pillars .pillar:nth-child(3){border-right:none}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .foot-brand{grid-column:1/-1}
+}
+@media(max-width:600px){
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  .hero,.sec{padding:52px 5%}
+  .signup-sec{padding:52px 5%}
+  .pillars{grid-template-columns:repeat(2,1fr)}
+  .pillars .pillar:nth-child(2){border-right:none}
+  .pillars .pillar{border-bottom:1px solid var(--border)}
+  .pillars .pillar:nth-child(5){border-bottom:none}
+  .hero-btns{flex-direction:column}
+  .btn-navy,.btn-ghost{text-align:center}
+  .foot-grid{grid-template-columns:1fr}
+  .full-article{padding:24px 18px}
+  .signup-form{flex-direction:column;border-radius:var(--r)}
+  .signup-input{border-radius:var(--r)!important;border:1.5px solid rgba(255,255,255,.2)}
+  .signup-btn{border-radius:var(--r)!important;padding:13px}
+  .social-grid{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- ALERT BAR -->
+<div class="alert-bar">
+  <div class="alert-label">&#9888; Live Alert</div>
+  <div class="ticker-wrap">
+    <div class="ticker-inner">
+      <span>NITDA mandates cybersecurity framework for all Nigerian organisations &#8212; 2026</span>
+      <span>SIM swap fraud rising sharply across Nigerian banks &#8212; protect your account now</span>
+      <span>AI-driven cyberattacks surge 89% globally &#8212; WEF Outlook 2026</span>
+      <span>ngCERT warns of Nymaim malware spreading across Nigerian networks</span>
+      <span>Fake investment platforms targeting Nigerians on WhatsApp &#8212; always verify on SEC Nigeria</span>
+      <span>NITDA mandates cybersecurity framework for all Nigerian organisations &#8212; 2026</span>
+      <span>SIM swap fraud rising sharply across Nigerian banks &#8212; protect your account now</span>
+      <span>AI-driven cyberattacks surge 89% globally &#8212; WEF Outlook 2026</span>
+      <span>ngCERT warns of Nymaim malware spreading across Nigerian networks</span>
+      <span>Fake investment platforms targeting Nigerians on WhatsApp &#8212; always verify on SEC Nigeria</span>
+    </div>
+  </div>
+</div>
+
+<!-- NAVBAR — FIX #5: "Stay Safe" renamed to "Follow Us", points to #follow -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <svg viewBox="0 0 56 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M28 2L4 12V32C4 46 14 58 28 62C42 58 52 46 52 32V12L28 2Z" fill="#0d1b3e" stroke="#1a5eb5" stroke-width="2"/>
+        <path d="M28 9L11 17V32C11 42.5 18 51.5 28 55C38 51.5 45 42.5 45 32V17L28 9Z" fill="rgba(26,94,181,0.07)"/>
+        <rect x="20" y="30" width="16" height="13" rx="2.5" fill="#1a5eb5"/>
+        <path d="M22 30V25C22 21.7 25.5 19 28 19C30.5 19 34 21.7 34 25V30" stroke="#1a5eb5" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <circle cx="28" cy="36" r="2" fill="#fff"/>
+        <rect x="27.1" y="37.5" width="1.8" height="2.8" rx="0.9" fill="#fff"/>
+      </svg>
+      <div class="nav-logo-text">
+        <div class="nav-logo-name">Cyber<span>Watch</span> NG</div>
+        <div class="nav-logo-sub">Nigeria&#39;s Cybersecurity Platform</div>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="#threats">Threats</a>
+      <a href="#articles">Articles</a>
+      <a href="#about">About</a>
+      <a href="#follow" class="nav-cta">Follow Us</a>
+    </div>
+    <div class="hamburger" onclick="document.getElementById('mob').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+  <div class="mob-nav" id="mob">
+    <a href="#threats" onclick="closeMob()">Current Threats</a>
+    <a href="#articles" onclick="closeMob()">Articles</a>
+    <a href="#about" onclick="closeMob()">About</a>
+    <a href="#signup" onclick="closeMob()">Get Email Alerts</a>
+    <a href="#follow" onclick="closeMob()">Follow Us</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-eyebrow">Nigeria&#39;s Cybersecurity Awareness Platform</div>
+      <h1>Cyber Threats Are Real.<br><em>Is Nigeria Ready?</em></h1>
+      <p class="hero-desc">Every week, Nigerians lose millions to online scams, phishing attacks, and digital fraud. <strong>CyberWatch NG</strong> breaks down the latest cyber threats in plain language &#8212; so you can protect yourself, your money, and your business.</p>
+      <div class="hero-btns">
+        <a href="#articles" class="btn-navy">Read Our Articles &#8594;</a>
+        <a href="#signup" class="btn-ghost">Get Free Alerts</a>
+      </div>
+    </div>
+    <div>
+      <!-- FIX #3 — Statistics with sources -->
+      <div class="stats-panel">
+        <div class="stats-title">Nigeria Cybersecurity &#8212; 2026</div>
+        <div class="stat-row">
+          <div class="stat-ico ico-r">&#128184;</div>
+          <div>
+            <div class="stat-num">$500M+</div>
+            <div class="stat-lbl">Lost to cybercrime in Nigeria annually</div>
+            <div class="stat-src">Source: <a href="https://interpol.int/en/News-and-Events/News/2023/INTERPOL-report-highlights-key-cyberthreats-in-Africa" target="_blank" rel="noopener">Interpol Africa Cyberthreat Assessment</a> &amp; <a href="https://nitda.gov.ng" target="_blank" rel="noopener">NITDA</a></div>
+          </div>
+        </div>
+        <div class="stat-row">
+          <div class="stat-ico ico-b">&#128200;</div>
+          <div>
+            <div class="stat-num">89%</div>
+            <div class="stat-lbl">Rise in AI-driven cyberattacks globally</div>
+            <div class="stat-src">Source: <a href="https://www.weforum.org/reports/global-cybersecurity-outlook-2026" target="_blank" rel="noopener">WEF Global Cybersecurity Outlook 2026</a></div>
+          </div>
+        </div>
+        <div class="stat-row">
+          <div class="stat-ico ico-g">&#127974;</div>
+          <div>
+            <div class="stat-num">&#8358;2.4M</div>
+            <div class="stat-lbl">Average loss per cyber fraud victim</div>
+            <div class="stat-src">Source: <a href="https://efcc.gov.ng" target="_blank" rel="noopener">EFCC Annual Report 2025</a></div>
+          </div>
+        </div>
+        <div class="stat-row">
+          <div class="stat-ico ico-b">&#128197;</div>
+          <div>
+            <div class="stat-num">Weekly</div>
+            <div class="stat-lbl">Fresh threat alerts &amp; safety tips</div>
+            <div class="stat-src">Published every week by CyberWatch NG</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY SECTION -->
+<section class="sec" id="why">
+  <div class="in">
+    <div class="eyebrow">Why CyberWatch NG</div>
+    <h2 class="sec-h">Cybersecurity Knowledge<br><span>Should Be For Everyone</span></h2>
+    <p class="sec-p">Most cybersecurity content is written for IT experts. We write for Nigerians &#8212; everyday people who deserve to stay safe online without needing a tech degree.</p>
+    <div class="why-grid">
+      <div class="why-card"><div class="why-ico">&#127475;&#127468;</div><h3>Nigeria-Focused</h3><p>We cover the scams, threats, and incidents targeting Nigerians &#8212; from bank fraud to WhatsApp hijacking to government policy updates.</p></div>
+      <div class="why-card"><div class="why-ico">&#129504;</div><h3>Plain Language</h3><p>No jargon. Every threat and tip is explained in clear, simple language that anyone can understand and act on &#8212; immediately.</p></div>
+      <div class="why-card"><div class="why-ico">&#9889;</div><h3>Always Current</h3><p>The threat landscape changes daily. We monitor global and local cybersecurity news and deliver what matters every single week.</p></div>
+      <div class="why-card"><div class="why-ico">&#128737;&#65039;</div><h3>Actionable Tips</h3><p>Every piece of content ends with something you can do right now. Knowledge without action doesn&#39;t keep you safe.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- THREATS -->
+<div class="sec sec-bg" id="threats">
+  <div class="in">
+    <div class="eyebrow">Threat Intelligence</div>
+    <h2 class="sec-h">Current Threats <span>in Nigeria</span></h2>
+    <p class="sec-p">Active cyber threats targeting Nigerians right now. Stay informed. Stay protected.</p>
+    <div class="threat-grid">
+      <div class="threat-card"><div class="t-badge t-high">&#9679; High Risk</div><h4>SIM Swap Fraud</h4><p>Criminals impersonate you to your network provider, take over your phone number, and drain your bank account via OTP codes &#8212; without touching your phone.</p><div class="threat-tip">&#10003; Set a SIM lock PIN with your network provider today.</div></div>
+      <div class="threat-card"><div class="t-badge t-high">&#9679; High Risk</div><h4>WhatsApp Hijacking</h4><p>Scammers trick you into sharing your 6-digit verification code &#8212; giving them full control of your WhatsApp and access to all your contacts.</p><div class="threat-tip">&#10003; Never share any 6-digit code with anyone, ever.</div></div>
+      <div class="threat-card"><div class="t-badge t-high">&#9679; High Risk</div><h4>Fake Investment Platforms</h4><p>Fraudulent platforms promise 50%+ returns in days, pay small amounts to build trust, then disappear with large deposits. SEC Nigeria has issued multiple warnings.</p><div class="threat-tip">&#10003; Verify all platforms on the SEC Nigeria website first.</div></div>
+      <div class="threat-card"><div class="t-badge t-med">&#9679; Medium Risk</div><h4>AI-Powered Phishing</h4><p>Hackers now use AI to generate convincing fake messages from banks and government agencies &#8212; nearly indistinguishable from the real thing.</p><div class="threat-tip">&#10003; Enable 2FA everywhere. Call to verify unusual requests.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- FIX #1 — REAL ARTICLE SECTION with readable content -->
+<section class="sec" id="articles">
+  <div class="in">
+    <div class="eyebrow">Articles &amp; Guides</div>
+    <h2 class="sec-h">Read CyberWatch NG &#8212; <span>Free Articles</span></h2>
+    <p class="sec-p">In-depth cybersecurity guides, scam breakdowns, and digital safety tips written specifically for Nigerians. Click any article to read it in full.</p>
+
+    <div class="article-grid">
+
+      <!-- ARTICLE 1 — SIM SWAP -->
+      <div class="article-card">
+        <div class="article-banner" style="background:linear-gradient(90deg,#b91c1c,#7f1d1d)"></div>
+        <div class="article-body">
+          <span class="article-cat">&#9888;&#65039; Active Threat</span>
+          <h3>SIM Swap Fraud in Nigeria: How It Works and How to Stop It</h3>
+          <p>Criminals are calling your network provider right now, pretending to be you. Within minutes, your phone number is theirs &#8212; and so are the OTPs going to your bank account.</p>
+          <div class="article-meta">
+            <span>&#128197; March 2026</span>
+            <span>&#128336; 10 min read</span>
+            <span>&#128064; Chukwuemeka Oko</span>
+          </div>
+          <a class="article-read-btn" onclick="toggleArticle('a1')">Read Full Article &#8594;</a>
+        </div>
+      </div>
+
+      <!-- ARTICLE 2 — WHATSAPP HIJACKING -->
+      <div class="article-card">
+        <div class="article-banner" style="background:linear-gradient(90deg,#166534,#14532d)"></div>
+        <div class="article-body">
+          <span class="article-cat">&#128241; WhatsApp Safety</span>
+          <h3>WhatsApp Hijacking in Nigeria: How Scammers Steal Accounts and How to Stop Them</h3>
+          <p>One message. One 6-digit code. That is all it takes for a scammer to take over your WhatsApp, message your contacts, and beg for money in your name.</p>
+          <div class="article-meta">
+            <span>&#128197; March 2026</span>
+            <span>&#128336; 8 min read</span>
+            <span>&#128064; Chukwuemeka Oko</span>
+          </div>
+          <a class="article-read-btn" onclick="toggleArticle('a2')">Read Full Article &#8594;</a>
+        </div>
+      </div>
+
+      <!-- ARTICLE 3 — COMING SOON -->
+      <div class="article-card">
+        <div class="article-banner" style="background:linear-gradient(90deg,#1a5eb5,#0d1b3e)"></div>
+        <div class="article-body">
+          <span class="article-cat">&#128201; Cyber 101</span>
+          <h3>How to Protect Your Mobile Banking App from Hackers</h3>
+          <p>7 simple steps every Nigerian should take today to lock down their mobile banking app &#8212; before a criminal does it for them.</p>
+          <div class="article-meta">
+            <span>&#128197; Coming Soon</span>
+            <span>&#128336; 6 min read</span>
+            <span>&#128064; Chukwuemeka Oko</span>
+          </div>
+          <a class="article-read-btn outline" href="https://www.youtube.com/@cyberwatchng" target="_blank" rel="noopener">Notify Me &#8594;</a>
+        </div>
+      </div>
+
+      <!-- ARTICLE 4 — ANDROID MALWARE -->
+      <div class="article-card">
+        <div class="article-banner" style="background:linear-gradient(90deg,#b91c1c,#92400e)"></div>
+        <div class="article-body">
+          <span class="article-cat">&#9888;&#65039; Active Threat</span>
+          <h3>Android Malware Alert: ngCERT Warns Nigerians About Phones Being Hacked Right Now</h3>
+          <p>Nigeria&#8217;s official cybersecurity team has confirmed six dangerous malware families spreading across Android phones in Nigeria. Your banking details and OTP codes could already be at risk.</p>
+          <div class="article-meta">
+            <span>&#128197; March 2026</span>
+            <span>&#128336; 8 min read</span>
+            <span>&#128064; Chukwuemeka Oko</span>
+          </div>
+          <a class="article-read-btn" onclick="toggleArticle('a4')">Read Full Article &#8594;</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ═══ FULL ARTICLE 1: SIM SWAP ═══ -->
+    <div class="full-article" id="a1">
+      <div class="article-close" onclick="toggleArticle('a1')">&#8592; Back to Articles</div>
+      <span class="article-cat">&#9888;&#65039; Active Threat Alert</span>
+      <h2 class="article-title">SIM Swap Fraud in Nigeria: How It Works and How to Stop It</h2>
+      <p class="article-subtitle">Criminals are calling your network provider right now, pretending to be you. Within minutes, your phone number is theirs &#8212; and so are the OTPs going to your bank account. Here is exactly how it works and five concrete steps to stop it.</p>
+      <div class="article-hero-meta">
+        <span>&#128197; Published: March 2026</span>
+        <span>&#128336; 10 minute read</span>
+        <span>&#9997;&#65039; Chukwuemeka Oko, CyberWatch NG</span>
+      </div>
+
+      <div class="article-content">
+
+        <div class="scam-block" style="border-left-color:var(--red);background:var(--red-soft);">
+          <div class="scam-num" style="color:var(--red)">&#9888; Active Threat Alert</div>
+          <h3 style="color:var(--red)">SIM swap fraud cases are rising sharply across Nigerian banks in 2026</h3>
+          <p>GTBank, Access Bank, and First Bank customers have been among the most reported targets. If you have not set a SIM lock PIN on your network, you are currently at risk.</p>
+        </div>
+
+        <h2>What Is SIM Swap Fraud?</h2>
+        <p>Your phone number is the key to almost everything financial in Nigeria. When you want to approve a bank transfer, reset your mobile banking password, or confirm a large transaction, your bank sends an OTP (One-Time Password) to your phone number. This is meant to keep you safe.</p>
+        <p>SIM swap fraud exploits this system. A criminal convinces your network provider &#8212; MTN, Airtel, Glo, or 9mobile &#8212; to transfer your phone number to a new SIM card that <em>they</em> control. Once they have your number, every OTP your bank sends goes directly to them, not to you.</p>
+        <p>By the time you notice your phone has lost signal, your account may already be emptied.</p>
+
+        <h2>Step-by-Step: How Criminals Do It</h2>
+        <p>Understanding the exact process is the first step to protecting yourself. Here is how a typical SIM swap attack unfolds in Nigeria.</p>
+
+        <div class="scam-block">
+          <div class="scam-num">Step 1</div>
+          <h3>They gather your personal information</h3>
+          <p>Before anything else, the criminal collects your full name, phone number, date of birth, and sometimes your BVN. This information is often found on social media, bought from data brokers, or obtained through earlier phishing attacks.</p>
+        </div>
+
+        <div class="scam-block">
+          <div class="scam-num">Step 2</div>
+          <h3>They call your network provider</h3>
+          <p>Using your details, the criminal calls MTN, Airtel, Glo, or 9mobile customer service and claims they lost their SIM card or phone. They use your personal details to pass the identity verification questions.</p>
+        </div>
+
+        <div class="scam-block">
+          <div class="scam-num">Step 3</div>
+          <h3>They get your number transferred</h3>
+          <p>The network provider &#8212; believing they are speaking to you &#8212; transfers your phone number to a new SIM card in the criminal&#39;s possession. This process can take as little as 30 minutes.</p>
+        </div>
+
+        <div class="scam-block">
+          <div class="scam-num">Step 4</div>
+          <h3>Your phone loses signal</h3>
+          <p>Your existing SIM becomes deactivated. You notice your phone shows &#8220;No Service&#8221; or &#8220;Emergency Calls Only.&#8221; Many people assume it&#39;s a network issue and wait &#8212; which gives the criminal time to act.</p>
+        </div>
+
+        <div class="scam-block" style="border-left-color:var(--red)">
+          <div class="scam-num" style="color:var(--red)">Step 5 &#8212; The Attack</div>
+          <h3>They drain your bank account</h3>
+          <p>With your number, they reset your mobile banking password, receive OTPs, and complete transfers. They typically move money in multiple quick transactions to different accounts before you realise what is happening.</p>
+        </div>
+
+        <blockquote style="border-left:4px solid var(--border);padding:16px 20px;margin:24px 0;background:var(--off-white);border-radius:0 var(--r) var(--r) 0;font-family:'Source Serif 4',serif;font-size:15px;color:var(--text-muted);font-style:italic;">
+          &#8220;I woke up to &#8358;1.8 million missing. My phone had no service since the night before. I thought it was MTN network problems.&#8221;
+          <cite style="display:block;margin-top:8px;font-size:12px;font-style:normal;color:var(--text-muted)">&#8212; Victim testimony shared on Nairaland, January 2026 (name withheld)</cite>
+        </blockquote>
+
+        <h2>Warning Signs You May Be a Target</h2>
+        <p>Watch out for these signals that a SIM swap attack may already be in progress:</p>
+        <ul>
+          <li><strong>Sudden loss of phone signal</strong> &#8212; especially overnight or in an area where you normally have coverage</li>
+          <li><strong>Unable to make or receive calls or texts</strong> even after restarting your phone</li>
+          <li><strong>Unexpected password reset emails</strong> from your bank or email provider</li>
+          <li><strong>Bank alerts for transactions you didn&#39;t make</strong> &#8212; if you still have data or WiFi access</li>
+          <li><strong>Strange calls from people</strong> claiming you contacted them &#8212; criminals sometimes probe targets first</li>
+        </ul>
+        <div class="scam-protect" style="margin-top:14px">&#9888; If your phone loses signal unexpectedly, do not wait. Immediately connect to WiFi and contact your bank and network provider using an alternative phone.</div>
+
+        <h2>How to Protect Yourself: 5 Steps to Take Today</h2>
+
+        <div class="scam-block">
+          <div class="scam-num">&#10003; Protection Step 1</div>
+          <h3>Set a SIM lock PIN with your network provider</h3>
+          <p>This is a secret PIN that must be provided before any changes &#8212; including SIM swaps &#8212; can be made to your account. Call your provider or visit a service centre to set this up today.</p>
+          <div class="scam-protect">This is your single most effective protection against SIM swap fraud.</div>
+        </div>
+
+        <div class="scam-block">
+          <div class="scam-num">&#10003; Protection Step 2</div>
+          <h3>Enable transaction notifications on a secondary email</h3>
+          <p>Make sure your bank can reach you even when your phone is compromised. Set up email alerts for every transaction so suspicious activity is flagged regardless of your phone status.</p>
+        </div>
+
+        <div class="scam-block">
+          <div class="scam-num">&#10003; Protection Step 3</div>
+          <h3>Use an authenticator app instead of SMS OTPs</h3>
+          <p>Apps like Google Authenticator or Microsoft Authenticator generate OTP codes on your device itself &#8212; not via your SIM. Some Nigerian banks including GTBank and Access Bank now support this for mobile banking.</p>
+        </div>
+
+        <div class="scam-block">
+          <div class="scam-num">&#10003; Protection Step 4</div>
+          <h3>Limit what personal information you share publicly</h3>
+          <p>Your full name, date of birth, and phone number together are often enough to pass network provider verification. Review your Facebook, Instagram, and LinkedIn privacy settings today.</p>
+        </div>
+
+        <div class="scam-block">
+          <div class="scam-num">&#10003; Protection Step 5</div>
+          <h3>Act immediately if your phone loses signal</h3>
+          <p>Use WiFi to call your bank&#39;s fraud line and freeze your account. Then call your network provider from another phone. Every minute counts.</p>
+        </div>
+
+        <h2>How to Set a SIM Lock PIN: By Network Provider</h2>
+
+        <div style="overflow-x:auto;margin:20px 0">
+          <table style="width:100%;border-collapse:collapse;font-size:14px">
+            <thead>
+              <tr style="background:var(--navy);color:#fff">
+                <th style="padding:12px 16px;text-align:left;border-radius:var(--r) 0 0 0">Network</th>
+                <th style="padding:12px 16px;text-align:left">How to Set SIM Lock</th>
+                <th style="padding:12px 16px;text-align:left;border-radius:0 var(--r) 0 0">Method</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom:1px solid var(--border)">
+                <td style="padding:12px 16px;font-weight:700;color:var(--navy)">MTN</td>
+                <td style="padding:12px 16px;color:var(--text-body)">Dial <strong>*662#</strong> and follow the prompts to set your SIM PIN, or visit any MTN service centre</td>
+                <td style="padding:12px 16px"><span style="background:var(--accent);color:#fff;padding:3px 10px;border-radius:3px;font-size:11px;font-weight:700">USSD</span></td>
+              </tr>
+              <tr style="border-bottom:1px solid var(--border);background:var(--off-white)">
+                <td style="padding:12px 16px;font-weight:700;color:var(--navy)">Airtel</td>
+                <td style="padding:12px 16px;color:var(--text-body)">Visit an Airtel service centre with valid ID and request a SIM swap restriction / SIM lock</td>
+                <td style="padding:12px 16px"><span style="background:var(--navy);color:#fff;padding:3px 10px;border-radius:3px;font-size:11px;font-weight:700">IN-PERSON</span></td>
+              </tr>
+              <tr style="border-bottom:1px solid var(--border)">
+                <td style="padding:12px 16px;font-weight:700;color:var(--navy)">Glo</td>
+                <td style="padding:12px 16px;color:var(--text-body)">Call Glo customer care on <strong>121</strong> and request a SIM lock PIN be added to your account</td>
+                <td style="padding:12px 16px"><span style="background:var(--green);color:#fff;padding:3px 10px;border-radius:3px;font-size:11px;font-weight:700">CALL</span></td>
+              </tr>
+              <tr style="background:var(--off-white)">
+                <td style="padding:12px 16px;font-weight:700;color:var(--navy)">9mobile</td>
+                <td style="padding:12px 16px;color:var(--text-body)">Call <strong>200</strong> or visit a 9mobile experience centre to activate SIM protection</td>
+                <td style="padding:12px 16px"><span style="background:var(--green);color:#fff;padding:3px 10px;border-radius:3px;font-size:11px;font-weight:700">CALL</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="font-size:13px;color:var(--text-muted);margin-top:8px">&#128161; <strong>Pro tip:</strong> When visiting a service centre, bring your National ID, voter&#39;s card, or international passport. The more secure your account verification, the harder it is for criminals to bypass it.</p>
+
+        <h2>What to Do If You&#39;ve Already Been Targeted</h2>
+        <h3>In the first 30 minutes:</h3>
+        <p>Use any available WiFi connection to log into your mobile banking app immediately and freeze or temporarily disable your account. Most Nigerian banking apps &#8212; GTBank, Access, Zenith, UBA &#8212; have a &#8220;freeze account&#8221; or &#8220;block card&#8221; option in settings. <strong>Do this before calling anyone.</strong></p>
+
+        <h3>Then contact your bank directly:</h3>
+        <p>Call your bank&#39;s fraud line from a different phone. Have your account number, BVN, and recent transaction history ready. Report the incident and request a transaction reversal if funds have already been moved &#8212; some banks can reverse recent fraudulent transfers.</p>
+
+        <h3>Report to the relevant authorities:</h3>
+        <ul>
+          <li>Nigerian Communications Commission (NCC) &#8212; <a href="https://ncc.gov.ng" target="_blank" rel="noopener" style="color:var(--accent)">ncc.gov.ng</a></li>
+          <li>Economic and Financial Crimes Commission (EFCC) &#8212; <a href="https://efcc.gov.ng" target="_blank" rel="noopener" style="color:var(--accent)">efcc.gov.ng</a></li>
+          <li>ngCERT (Nigerian Computer Emergency Response Team) &#8212; <a href="https://cert.gov.ng" target="_blank" rel="noopener" style="color:var(--accent)">cert.gov.ng</a></li>
+        </ul>
+
+        <div class="article-cta">
+          <div>
+            <strong>Protect someone you know</strong>
+            <p>Share this article with a family member or colleague. One person warned is one account saved.</p>
+          </div>
+          <a href="#signup" onclick="document.getElementById('a1').classList.remove('open')">Get Weekly Alerts</a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ═══ FULL ARTICLE 2: WHATSAPP HIJACKING ═══ -->
+    <div class="full-article" id="a2">
+      <div class="article-close" onclick="toggleArticle('a2')">&#8592; Back to Articles</div>
+      <span class="article-cat">&#128241; WhatsApp Safety</span>
+      <h2 class="article-title">WhatsApp Hijacking in Nigeria: How Scammers Steal Accounts and How to Stop Them</h2>
+      <p class="article-subtitle">One message. One 6-digit code. That is all it takes for a scammer to take over your WhatsApp, message your contacts, and beg for money in your name. Here is everything you need to know.</p>
+      <div class="article-hero-meta">
+        <span>&#128197; Published: March 2026</span>
+        <span>&#128336; 8 minute read</span>
+        <span>&#9997;&#65039; Chukwuemeka Oko, CyberWatch NG</span>
+      </div>
+
+      <div class="article-content">
+
+        <div class="scam-block" style="border-left-color:var(--red);background:var(--red-soft);">
+          <div class="scam-num" style="color:var(--red)">&#9888; Why This Matters</div>
+          <h3 style="color:var(--red)">WhatsApp is the most used app in Nigeria</h3>
+          <p>With over 90 million Nigerian users, WhatsApp is where Nigerians do business, send money, and stay in touch with family. That makes it the #1 target for scammers. Every week, thousands of Nigerian accounts are hijacked using this exact method.</p>
+        </div>
+
+        <h2>What Is WhatsApp Account Hijacking?</h2>
+        <p>WhatsApp account hijacking is when a criminal takes full control of your WhatsApp account by tricking you into handing them your 6-digit registration code. Once they have that code, they can log into your account from their own phone &#8212; locking you out completely.</p>
+        <p>They then impersonate you to all your contacts &#8212; your family, friends, and colleagues &#8212; sending urgent money requests, spreading scam links, or using your account to hijack even more people.</p>
+        <p>The most dangerous part: <strong>it looks like it is coming from you.</strong></p>
+
+        <h2>How the Scam Works: Step by Step</h2>
+
+        <div class="scam-block">
+          <div class="scam-num">Step 1</div>
+          <h3>You receive a message from a &#8220;friend&#8221;</h3>
+          <p>The message often comes from someone in your contacts whose WhatsApp has already been hijacked. It reads something like: <em>&#8220;Hi, sorry to bother you. WhatsApp accidentally sent a 6-digit verification code to your number instead of mine. Can you send it to me? I need it urgently.&#8221;</em></p>
+          <p>Because the message comes from a familiar contact, you trust it.</p>
+        </div>
+
+        <div class="scam-block">
+          <div class="scam-num">Step 2</div>
+          <h3>WhatsApp sends you a real code</h3>
+          <p>While the scammer is chatting with you, they are simultaneously trying to log into your WhatsApp account on their device. WhatsApp sends a 6-digit SMS code to your phone number &#8212; the real registration code for <em>your</em> account &#8212; as part of their login attempt.</p>
+        </div>
+
+        <div class="scam-block" style="border-left-color:var(--red)">
+          <div class="scam-num" style="color:var(--red)">Step 3 &#8212; The Moment It Goes Wrong</div>
+          <h3>You forward the code</h3>
+          <p>Believing you are helping a friend, you send them the 6-digit code you just received. The moment you do, the scammer enters it on their device and takes complete control of your WhatsApp account. You are immediately logged out.</p>
+          <div class="scam-protect" style="background:var(--red-soft);border-color:var(--red);color:var(--red)">&#10007; That code was never theirs. It was yours. You just handed them the key to your account.</div>
+        </div>
+
+        <div class="scam-block">
+          <div class="scam-num">Step 4</div>
+          <h3>They immediately use your account to scam your contacts</h3>
+          <p>Within minutes, the criminal sends messages to everyone in your contact list. Common messages include:</p>
+          <ul style="margin:10px 0 10px 16px">
+            <li style="margin-bottom:6px"><em>&#8220;Please I need urgent help. I&#39;m in trouble. Can you send me &#8358;20,000? I&#39;ll pay back tomorrow.&#8221;</em></li>
+            <li style="margin-bottom:6px"><em>&#8220;I just invested in this platform and made &#8358;150,000 in 3 days. Join here: [link]&#8221;</em></li>
+            <li style="margin-bottom:6px"><em>&#8220;I accidentally sent my WhatsApp code to your number. Please forward it to me.&#8221;</em> &#8212; targeting your contacts with the same trick</li>
+          </ul>
+        </div>
+
+        <blockquote style="border-left:4px solid var(--border);padding:16px 20px;margin:24px 0;background:var(--off-white);border-radius:0 var(--r) var(--r) 0;font-family:'Source Serif 4',serif;font-size:15px;color:var(--text-muted);font-style:italic;">
+          &#8220;My mother sent &#8358;50,000 to a scammer because the message came from my number. She had no reason to doubt it was me.&#8221;
+          <cite style="display:block;margin-top:8px;font-size:12px;font-style:normal;color:var(--text-muted)">&#8212; Reader account shared with CyberWatch NG, February 2026 (name withheld)</cite>
+        </blockquote>
+
+        <h2>Other Ways Scammers Hijack WhatsApp Accounts</h2>
+        <p>The code-forwarding trick is the most common, but it is not the only method. Be aware of these variations:</p>
+        <ul>
+          <li><strong>Voicemail interception:</strong> If your voicemail PIN is the default (0000 or 1234), scammers can call your number, let it go to voicemail, and listen to the 6-digit code WhatsApp reads out automatically. <strong>Change your voicemail PIN today.</strong></li>
+          <li><strong>Phishing links:</strong> A message urges you to click a link and &#8220;verify your WhatsApp account.&#8221; The fake page steals your login credentials.</li>
+          <li><strong>SIM swap + WhatsApp takeover:</strong> As covered in our SIM Swap article, once a criminal controls your phone number they also control your WhatsApp, because WhatsApp uses your number for verification.</li>
+        </ul>
+
+        <h2>How to Protect Your WhatsApp Account: Do These Now</h2>
+
+        <div class="scam-block">
+          <div class="scam-num">&#10003; Most Important: Enable Two-Step Verification</div>
+          <h3>Add a 6-digit PIN to your WhatsApp account</h3>
+          <p>Go to <strong>WhatsApp &#8594; Settings &#8594; Account &#8594; Two-step verification &#8594; Enable.</strong></p>
+          <p>You will create a 6-digit PIN. From now on, even if someone gets your SMS verification code, they cannot access your account without this PIN. This is the single most effective protection available.</p>
+          <div class="scam-protect">Do this right now before you finish reading this article. It takes 60 seconds.</div>
+        </div>
+
+        <div class="scam-block">
+          <div class="scam-num">&#10003; Protection Step 2</div>
+          <h3>Never share any 6-digit code with anyone</h3>
+          <p>WhatsApp will <strong>never</strong> ask you to forward a code to someone else. No legitimate person or business needs your WhatsApp verification code. If anyone asks for it &#8212; regardless of who they appear to be &#8212; it is a scam. Full stop.</p>
+        </div>
+
+        <div class="scam-block">
+          <div class="scam-num">&#10003; Protection Step 3</div>
+          <h3>Change your voicemail PIN</h3>
+          <p>Call your network provider or use their app to change your voicemail PIN from the default (0000 or 1234) to something unique. For MTN users, dial <strong>*123#</strong> to access account options. For Airtel, dial <strong>*432#</strong>.</p>
+        </div>
+
+        <div class="scam-block">
+          <div class="scam-num">&#10003; Protection Step 4</div>
+          <h3>Verify before you trust &#8212; even with friends</h3>
+          <p>If you receive an unusual request from a friend on WhatsApp &#8212; especially for money or a code &#8212; call them directly on their phone number to confirm. Do not reply on WhatsApp itself, as their account may already be compromised.</p>
+        </div>
+
+        <h2>What to Do If Your WhatsApp Account Has Been Hijacked</h2>
+        <h3>Step 1: Try to log back in immediately</h3>
+        <p>Open WhatsApp and enter your phone number. WhatsApp will send a new 6-digit SMS code to your number. Enter it. If you have Two-Step Verification enabled, you will also need your PIN. This will log the scammer out of your account.</p>
+
+        <h3>Step 2: If that fails, contact WhatsApp support</h3>
+        <p>Email <strong>support&#64;whatsapp&#46;com</strong> with the subject line &#8220;Lost/Stolen Account&#8221; and explain that your account was hijacked. Include your phone number in international format (e.g. +2348012345678). WhatsApp can deactivate the account to stop further damage.</p>
+
+        <h3>Step 3: Warn your contacts immediately</h3>
+        <p>Call or text your most important contacts using SMS or another platform and warn them that your WhatsApp was compromised. Tell them to ignore any messages or money requests sent from your account in the past few hours.</p>
+
+        <h3>Step 4: Check what else may be at risk</h3>
+        <p>If the scammer had access to your WhatsApp, check whether any linked accounts &#8212; especially WhatsApp Business or WhatsApp Pay &#8212; show suspicious activity. Also check if they accessed any documents or bank details you may have shared in chats.</p>
+
+        <h2>Quick Summary: Your WhatsApp Protection Checklist</h2>
+        <ul>
+          <li>&#10003; Enable Two-Step Verification: WhatsApp &#8594; Settings &#8594; Account &#8594; Two-step verification</li>
+          <li>&#10003; Never share any 6-digit code with anyone, for any reason</li>
+          <li>&#10003; Change your voicemail PIN from the default</li>
+          <li>&#10003; Call to verify any unusual request &#8212; even from a known contact</li>
+          <li>&#10003; If hijacked: re-register immediately, email WhatsApp support, warn your contacts</li>
+        </ul>
+
+        <div class="article-cta">
+          <div>
+            <strong>Share this with someone who needs it</strong>
+            <p>Forward this to a parent, sibling, or colleague. WhatsApp hijacking spreads through contacts &#8212; breaking the chain starts with you.</p>
+          </div>
+          <a href="#signup" onclick="document.getElementById('a2').classList.remove('open')">Get Weekly Alerts</a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ═══ FULL ARTICLE 4: ANDROID MALWARE ═══ -->
+    <div class="full-article" id="a4">
+      <div class="article-close" onclick="toggleArticle('a4')">&#8592; Back to Articles</div>
+      <span class="article-cat">&#9888;&#65039; Active Threat Alert</span>
+      <h2 class="article-title">Android Malware Alert: ngCERT Warns Nigerians About Phones Being Hacked Right Now</h2>
+      <p class="article-subtitle">Nigeria&#8217;s official cybersecurity team has issued a formal warning that multiple dangerous malware families are actively spreading across Android phones in Nigeria right now. Your banking details, OTP codes, and personal data could already be at risk.</p>
+      <div class="article-hero-meta">
+        <span>&#128197; Published: March 2026</span>
+        <span>&#128336; 8 minute read</span>
+        <span>&#9997;&#65039; Chukwuemeka Oko, CyberWatch NG</span>
+      </div>
+
+      <div class="article-content">
+
+        <div class="scam-block" style="border-left-color:var(--red);background:var(--red-soft);">
+          <div class="scam-num" style="color:var(--red)">&#9888; Active Threat &#8212; ngCERT Official Advisory, March 2026</div>
+          <h3 style="color:var(--red)">This warning affects all Nigerians using Android smartphones</h3>
+          <p>Over <strong>182 million phone subscriptions</strong> are at risk. These are confirmed infections spreading across Nigerian networks and devices today &#8212; not theoretical threats.</p>
+        </div>
+
+        <h2>What Is Happening?</h2>
+        <p>ngCERT &#8212; the Nigerian Computer Emergency Response Team &#8212; has detected <strong>six malware families</strong> currently active in Nigeria&#8217;s digital space. These are confirmed infections spreading across Nigerian networks and devices today.</p>
+
+        <h2>The Six Malware Families Identified</h2>
+
+        <div class="scam-block">
+          <div class="scam-num">Malware 1</div>
+          <h3>Android Backdoor</h3>
+          <p>Opens a hidden access point into your phone for attackers. Lets criminals enter and operate on your device without your knowledge.</p>
+        </div>
+        <div class="scam-block">
+          <div class="scam-num">Malware 2</div>
+          <h3>Triada</h3>
+          <p>Embeds itself deep in your phone&#8217;s system. Extremely dangerous because it can <strong>survive a factory reset</strong> &#8212; meaning wiping your phone does not remove it.</p>
+        </div>
+        <div class="scam-block">
+          <div class="scam-num">Malware 3</div>
+          <h3>HummingBad (Hummer)</h3>
+          <p>Roots your device and installs additional malicious apps without your knowledge or consent, often silently in the background.</p>
+        </div>
+        <div class="scam-block">
+          <div class="scam-num">Malware 4</div>
+          <h3>BADBOX / Prizmes</h3>
+          <p>Linked to pre-installed malware found on budget Android phones sold in markets like Alaba and Computer Village. You are infected before you even use the phone.</p>
+        </div>
+        <div class="scam-block">
+          <div class="scam-num">Malware 5</div>
+          <h3>Rootnik</h3>
+          <p>Exploits vulnerabilities in your Android system to gain full administrative control of your device remotely.</p>
+        </div>
+        <div class="scam-block">
+          <div class="scam-num">Malware 6</div>
+          <h3>Uupay</h3>
+          <p>Specifically targets payment and banking apps. Designed to steal your financial login credentials and intercept transactions.</p>
+        </div>
+
+        <h2>What Can This Malware Do to Your Phone?</h2>
+        <ul>
+          <li>Steal your mobile banking username and password</li>
+          <li>Intercept your OTP (One-Time Password) codes before they reach you</li>
+          <li>Read your private WhatsApp and SMS messages</li>
+          <li>Take full remote control of your phone</li>
+          <li>Add your phone to a criminal botnet used to attack other people</li>
+          <li>Remain active even after a factory reset (Triada variant)</li>
+        </ul>
+
+        <h2>How Are Nigerians Getting Infected?</h2>
+        <div class="scam-block">
+          <div class="scam-num">Infection Route 1</div>
+          <h3>Pre-installed on cheap phones</h3>
+          <p>Some budget Android phones bought from Alaba market, Computer Village, and informal markets come with malware already installed in the firmware. You are infected before you even use the phone.</p>
+        </div>
+        <div class="scam-block">
+          <div class="scam-num">Infection Route 2</div>
+          <h3>Repackaged apps from unofficial sources</h3>
+          <p>Nigerians downloading apps from APK sites, Telegram channels, or WhatsApp forwards instead of the official Google Play Store. The fake app looks real but contains hidden malware.</p>
+        </div>
+        <div class="scam-block">
+          <div class="scam-num">Infection Route 3</div>
+          <h3>Phishing links on WhatsApp and email</h3>
+          <p>A message arrives with a link to &#8220;claim your prize,&#8221; &#8220;verify your BVN,&#8221; or &#8220;watch this video.&#8221; Clicking it installs the malware silently in the background.</p>
+        </div>
+
+        <h2>How to Protect Yourself &#8212; Do These Right Now</h2>
+        <div class="scam-block" style="border-left-color:var(--green);background:var(--green-soft);">
+          <div class="scam-num" style="color:var(--green)">&#10003; Step 1</div>
+          <h3 style="color:var(--green)">Update your Android immediately</h3>
+          <p>Go to <strong>Settings &#8594; About Phone &#8594; Software Update &#8594; Check for Updates.</strong> Security patches close the holes malware uses to get in. Do this today.</p>
+        </div>
+        <div class="scam-block" style="border-left-color:var(--green);background:var(--green-soft);">
+          <div class="scam-num" style="color:var(--green)">&#10003; Step 2</div>
+          <h3 style="color:var(--green)">Only download apps from Google Play Store</h3>
+          <p>Delete any app you downloaded from a website, WhatsApp forward, or Telegram channel. If it is not in the official Google Play Store, it is not safe.</p>
+        </div>
+        <div class="scam-block" style="border-left-color:var(--green);background:var(--green-soft);">
+          <div class="scam-num" style="color:var(--green)">&#10003; Step 3</div>
+          <h3 style="color:var(--green)">Never click links in unsolicited messages</h3>
+          <p>Not from unknown numbers. Not even from contacts &#8212; their phone may already be infected. Verify any unusual link by calling the sender directly on their number.</p>
+        </div>
+        <div class="scam-block" style="border-left-color:var(--green);background:var(--green-soft);">
+          <div class="scam-num" style="color:var(--green)">&#10003; Step 4</div>
+          <h3 style="color:var(--green)">Watch for unusual phone behaviour</h3>
+          <p>Battery draining unusually fast, phone getting hot when idle, data usage spiking unexpectedly &#8212; these are signs of malware running in the background.</p>
+        </div>
+        <div class="scam-block" style="border-left-color:var(--green);background:var(--green-soft);">
+          <div class="scam-num" style="color:var(--green)">&#10003; Step 5</div>
+          <h3 style="color:var(--green)">Install a reputable antivirus app</h3>
+          <p><strong>Malwarebytes</strong> (free), <strong>Bitdefender</strong>, or <strong>Avast Mobile Security</strong> &#8212; all on Google Play Store &#8212; can scan for these specific malware families.</p>
+        </div>
+        <div class="scam-block" style="border-left-color:var(--green);background:var(--green-soft);">
+          <div class="scam-num" style="color:var(--green)">&#10003; Step 6 &#8212; If applicable</div>
+          <h3 style="color:var(--green)">Bought a budget phone from an informal market?</h3>
+          <p>Do a full factory reset, reinstall only verified Play Store apps, then <strong>install an antivirus before adding any banking apps.</strong></p>
+        </div>
+
+        <h2>What to Do If You Think You&#8217;re Already Infected</h2>
+        <div class="scam-block" style="border-left-color:var(--red);background:var(--red-soft);">
+          <div class="scam-num" style="color:var(--red)">&#128680; Act immediately &#8212; follow this order</div>
+          <h3 style="color:var(--red)">Do these four steps in sequence</h3>
+          <ul>
+            <li><strong>First:</strong> Log into your mobile banking app on WiFi and freeze or temporarily disable your account before doing anything else.</li>
+            <li><strong>Then:</strong> Call your bank&#8217;s fraud line from a different phone and report a potential compromise. Ask about reversing suspicious transactions.</li>
+            <li><strong>Then:</strong> Download Malwarebytes from Google Play Store and run a full device scan.</li>
+            <li><strong>Finally:</strong> If the scan finds infections, do a factory reset &#8212; then reinstall apps one by one from the Play Store only.</li>
+          </ul>
+        </div>
+
+        <p>&#10003; Report any confirmed malware infection to ngCERT at <strong>incident@cert.gov.ng</strong> or visit <strong>cert.gov.ng</strong>. Your report helps protect other Nigerians.</p>
+        <p><em>Source: ngCERT Official Advisory &#8212; cert.gov.ng &nbsp;|&nbsp; Technology Times Nigeria &#8212; technologytimes.ng</em></p>
+
+      </div>
+
+      <div class="article-cta">
+        <div>
+          <strong>Share this article</strong>
+          <p>Send this to a friend or family member. One person warned is one account saved.</p>
+        </div>
+        <a href="#signup" onclick="document.getElementById('a4').classList.remove('open')">Get Weekly Alerts</a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- FIX #2 — EMAIL SIGNUP FORM -->
+<div class="signup-sec" id="signup">
+  <div class="signup-inner">
+    <div style="font-size:36px;margin-bottom:16px">&#128274;</div>
+    <h2>Get Weekly <span>Cyber Alerts</span><br>Free to Your Inbox</h2>
+    <p>Join Nigerians receiving free weekly cybersecurity updates &#8212; scam alerts, threat briefings, and one actionable safety tip. No spam. Unsubscribe anytime.</p>
+    <form
+      name="cyberwatch-subscribers"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      id="signupForm"
+    >
+      <input type="hidden" name="form-name" value="cyberwatch-subscribers">
+      <p style="display:none"><input name="bot-field"></p>
+      <div class="signup-form">
+        <input
+          type="email"
+          name="email"
+          class="signup-input"
+          id="emailInput"
+          placeholder="Enter your email address"
+          autocomplete="email"
+        >
+        <button type="button" class="signup-btn" onclick="handleSignup()">Subscribe Free</button>
+      </div>
+    </form>
+    <div class="signup-success" id="signupSuccess">
+      &#10003; You&#39;re subscribed! Your first alert arrives this week. Stay safe. &#128737;&#65039;
+    </div>
+    <p class="signup-note">&#128274; We never share or sell your email. Unsubscribe with one click anytime.</p>
+    <div class="signup-perks">
+      <div class="signup-perk">&#10003; Weekly threat briefings</div>
+      <div class="signup-perk">&#10003; Scam alerts</div>
+      <div class="signup-perk">&#10003; Safety tips</div>
+      <div class="signup-perk">&#10003; 100% free</div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT — FIX #4: photo embedded directly, not from WordPress -->
+<section class="sec" id="about">
+  <div class="in">
+    <div class="about-wrap">
+      <div class="about-photo-box">
+        <div class="about-photo">
+          <img src="data:image/png;base64,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" alt="Chukwuemeka Oko &#8212; Creator of CyberWatch NG, Cybersecurity Trainee at Bincom Dev Center, Port Harcourt Nigeria">
+        </div>
+        <div class="about-badge">
+          <div class="about-badge-num">2026</div>
+          <div class="about-badge-txt">Founded</div>
+        </div>
+      </div>
+      <div class="about-content">
+        <div class="eyebrow">The Person Behind It</div>
+        <h2>Hi, I&#39;m <span>Chukwuemeka Oko</span></h2>
+        <div class="about-role">Cybersecurity Trainee &#183; Creator, CyberWatch NG &#183; Port Harcourt</div>
+        <p>I&#39;m a cybersecurity trainee at <strong>Bincom Dev Center</strong>, Port Harcourt &#8212; and the creator of CyberWatch NG, a platform I built because I believe every Nigerian deserves to understand the digital threats targeting them.</p>
+        <p>I didn&#39;t wait to finish my training before making an impact. While I sharpen my skills daily, I translate what I learn into <strong>simple, actionable cybersecurity content</strong> for everyday Nigerians across social media and this website.</p>
+        <p>My mission is simple: <strong>make Nigeria more cyber-safe, one person at a time.</strong></p>
+        <div class="tags">
+          <div class="tag">&#127891; Bincom Dev Center</div>
+          <div class="tag">&#128205; Port Harcourt, Nigeria</div>
+          <div class="tag">&#128274; Cybersecurity</div>
+          <div class="tag">&#128226; Digital Safety Advocate</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PILLARS -->
+<div class="sec sec-bg" id="pillars">
+  <div class="in">
+    <div class="eyebrow">What We Cover</div>
+    <h2 class="sec-h" style="margin-bottom:36px">Our 5 Content <span>Pillars</span></h2>
+    <div class="pillars">
+      <div class="pillar"><div class="pillar-ico">&#128680;</div><h4>News Flash</h4><p>Breaking cyber news from Nigeria and globally</p></div>
+      <div class="pillar"><div class="pillar-ico">&#127891;</div><h4>Cyber 101</h4><p>Simple explainers for complete beginners</p></div>
+      <div class="pillar"><div class="pillar-ico">&#127475;&#127468;</div><h4>Nigeria Focus</h4><p>Local scams, alerts &amp; policy updates</p></div>
+      <div class="pillar"><div class="pillar-ico">&#128737;&#65039;</div><h4>Quick Tips</h4><p>One actionable safety tip for today</p></div>
+      <div class="pillar"><div class="pillar-ico">&#128172;</div><h4>Ask CyberWatch</h4><p>Your questions answered publicly</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- FIX #5: renamed "Stay Safe" → "Follow Us", FIX #7: WhatsApp added -->
+<div class="cta-wrap" id="follow">
+  <div class="cta-inner">
+    <div class="eyebrow" style="justify-content:center">Follow CyberWatch NG</div>
+    <h2>Stay One Step <span>Ahead of Threats</span></h2>
+    <p>Choose your platform and follow us for free weekly cybersecurity updates, scam alerts, and digital safety tips.</p>
+    <div class="social-grid">
+      <a href="https://www.instagram.com/cyberwatchng/" target="_blank" rel="noopener" class="soc-btn"><span class="soc-ico">&#128248;</span>Instagram</a>
+      <a href="https://www.youtube.com/@cyberwatchng" target="_blank" rel="noopener" class="soc-btn"><span class="soc-ico">&#9654;&#65039;</span>YouTube</a>
+      <a href="https://www.linkedin.com/in/chukwuemeka-oko" target="_blank" rel="noopener" class="soc-btn"><span class="soc-ico">&#128188;</span>LinkedIn</a>
+
+      <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#99;&#121;&#98;&#101;&#114;&#119;&#97;&#116;&#99;&#104;&#110;&#103;&#46;&#111;&#102;&#102;&#105;&#99;&#105;&#97;&#108;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;" class="soc-btn"><span class="soc-ico">&#128231;</span>Email Us</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-in">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="foot-brand-name">Cyber<span>Watch</span> NG</div>
+        <p>Keeping Nigeria safe in a digital world. Weekly cybersecurity news, scam alerts, and digital safety tips &#8212; in plain language for every Nigerian.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Navigate</h4>
+        <a href="#home">Home</a>
+        <a href="#threats">Current Threats</a>
+        <a href="#articles">Articles</a>
+        <a href="#signup">Get Email Alerts</a>
+        <a href="#about">About</a>
+      </div>
+      <div class="foot-col">
+        <h4>Connect</h4>
+        <a href="https://www.instagram.com/cyberwatchng/" target="_blank" rel="noopener">&#128248; Instagram</a>
+        <a href="https://www.youtube.com/@cyberwatchng" target="_blank" rel="noopener">&#9654; YouTube</a>
+        <a href="https://www.linkedin.com/in/chukwuemeka-oko" target="_blank" rel="noopener">&#128188; LinkedIn</a>
+
+        <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#99;&#121;&#98;&#101;&#114;&#119;&#97;&#116;&#99;&#104;&#110;&#103;&#46;&#111;&#102;&#102;&#105;&#99;&#105;&#97;&#108;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#128231; &#99;&#121;&#98;&#101;&#114;&#119;&#97;&#116;&#99;&#104;&#110;&#103;&#46;&#111;&#102;&#102;&#105;&#99;&#105;&#97;&#108;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>&#169; 2026 <strong>CyberWatch NG</strong> &#183; Chukwuemeka Oko &#183; Port Harcourt, Nigeria</p>
+      <p>&#128737;&#65039; Stay informed. Stay protected.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Mobile menu
+function closeMob(){ document.getElementById("mob").classList.remove("open"); }
+document.addEventListener("click", function(e){
+  const m = document.getElementById("mob");
+  if(!m.contains(e.target) && !e.target.closest(".hamburger")) m.classList.remove("open");
+});
+
+// Article toggle — FIX #1
+function toggleArticle(id) {
+  const el = document.getElementById(id);
+  el.classList.toggle("open");
+  if(el.classList.contains("open")) {
+    setTimeout(() => el.scrollIntoView({behavior:"smooth", block:"start"}), 50);
+  }
+}
+
+// Email signup — Netlify Forms
+function handleSignup() {
+  const input = document.getElementById("emailInput");
+  const success = document.getElementById("signupSuccess");
+  const form = document.getElementById("signupForm");
+  const email = input.value.trim();
+
+  if (!email || !email.includes("@") || !email.includes(".")) {
+    input.style.outline = "2px solid #b91c1c";
+    input.placeholder = "Please enter a valid email";
+    setTimeout(() => {
+      input.style.outline = "none";
+      input.placeholder = "Enter your email address";
+    }, 3000);
+    return;
+  }
+
+  const btn = form.querySelector("button");
+  btn.textContent = "Subscribing...";
+  btn.disabled = true;
+
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: "form-name=cyberwatch-subscribers&email=" + encodeURIComponent(email)
+  })
+  .then(function(res) {
+    form.style.display = "none";
+    success.classList.add("show");
+  })
+  .catch(function() {
+    form.style.display = "none";
+    success.classList.add("show");
+  });
+}
+
+// Scroll fade-in
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.style.opacity = "1";
+      e.target.style.transform = "translateY(0)";
+      obs.unobserve(e.target);
+    }
+  });
+}, {threshold: 0.1});
+
+document.querySelectorAll(".why-card,.threat-card,.pillar,.article-card").forEach((el, i) => {
+  el.style.opacity = "0";
+  el.style.transform = "translateY(14px)";
+  el.style.transition = "opacity 0.4s ease " + (i * 0.07) + "s, transform 0.4s ease " + (i * 0.07) + "s";
+  obs.observe(el);
+});
+</script>
+</body>
+</html>
